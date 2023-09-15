@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/OfficeBoardApi.WebAPI/bin/Debug/net7.0/OfficeBoardApi.WebAPI.dll",
+            "program": "${workspaceFolder}/SampleApi.WebAPI/bin/Debug/net7.0/SampleApi.WebAPI.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/OfficeBoardApi.WebAPI",
+            "cwd": "${workspaceFolder}/SampleApi.WebAPI",
             "stopAtEntry": false,
             "serverReadyAction": {
                 "action": "openExternally",
@@ -29,9 +29,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/OfficeBoardApi.UnitTest/bin/Debug/net7.0/OfficeBoardApi.UnitTest.dll",
+            "program": "${workspaceFolder}/SampleApi.UnitTest/bin/Debug/net7.0/SampleApi.UnitTest.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/OfficeBoardApi.UnitTest",
+            "cwd": "${workspaceFolder}/SampleApi.UnitTest",
             "stopAtEntry": false,
             "serverReadyAction": {
                 "action": "openExternally",

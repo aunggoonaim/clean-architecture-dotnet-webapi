@@ -3,7 +3,7 @@
 /workspace.xml
 # Rider ignored files
 /projectSettingsUpdater.xml
-/.idea.OfficeBoardApi.iml
+/.idea.SampleApi.iml
 /modules.xml
 /contentModel.xml
 # Editor-based HTTP Client requests
