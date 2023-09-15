@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace OfficeBoardApi.Application.Features.UserFeatures.CreateUser;
+namespace OfficeBoardApi.Application.Command.User.CreateUser;
 
 public sealed class CreateUserValidator : AbstractValidator<CreateUserRequest>
 {

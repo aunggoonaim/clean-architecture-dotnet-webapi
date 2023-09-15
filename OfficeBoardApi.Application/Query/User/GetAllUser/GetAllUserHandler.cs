@@ -2,7 +2,7 @@
 using OfficeBoardApi.Application.Repositories;
 using MediatR;
 
-namespace OfficeBoardApi.Application.Features.UserFeatures.GetAllUser;
+namespace OfficeBoardApi.Application.Query.User.GetAllUser;
 
 public sealed class GetAllUserHandler : IRequestHandler<GetAllUserRequest, List<GetAllUserResponse>>
 {

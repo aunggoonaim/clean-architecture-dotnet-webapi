@@ -1,5 +1,5 @@
-﻿using OfficeBoardApi.Application.Features.UserFeatures.CreateUser;
-using OfficeBoardApi.Application.Features.UserFeatures.GetAllUser;
+﻿using OfficeBoardApi.Application.Command.User.CreateUser;
+using OfficeBoardApi.Application.Query.User.GetAllUser;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

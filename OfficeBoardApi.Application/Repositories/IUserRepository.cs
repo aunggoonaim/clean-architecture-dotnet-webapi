@@ -2,7 +2,7 @@
 
 namespace OfficeBoardApi.Application.Repositories;
 
-public interface IUserRepository : IBaseRepository<User>
+public interface IUserRepository : IBaseRepository<UserModel>
 {
-    Task<User> GetByEmail(string email, CancellationToken cancellationToken);
+    Task<UserModel> GetByEmail(string email, CancellationToken cancellationToken);
 }

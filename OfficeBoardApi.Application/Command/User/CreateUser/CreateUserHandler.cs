@@ -3,7 +3,7 @@ using OfficeBoardApi.Application.Repositories;
 using OfficeBoardApi.Domain.Entities;
 using MediatR;
 
-namespace OfficeBoardApi.Application.Features.UserFeatures.CreateUser;
+namespace OfficeBoardApi.Application.Command.User.CreateUser;
 
 public sealed class CreateUserHandler : IRequestHandler<CreateUserRequest, CreateUserResponse>
 {
@@ -20,7 +20,7 @@ public sealed class CreateUserHandler : IRequestHandler<CreateUserRequest, Creat
     
     public async Task<CreateUserResponse> Handle(CreateUserRequest request, CancellationToken cancellationToken)
     {
-        var user = _mapper.Map<User>(request);
+        var user = _mapper.Map<UserModel>(request);
         _userRepository.Create(user);
         await _unitOfWork.Save(cancellationToken);
 

@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using OfficeBoardApi.Domain.Entities;
 
-namespace OfficeBoardApi.Application.Features.UserFeatures.GetAllUser;
+namespace OfficeBoardApi.Application.Query.User.GetAllUser;
 
 public sealed class GetAllUserMapper : Profile
 {
     public GetAllUserMapper()
     {
-        CreateMap<User, GetAllUserResponse>();
+        CreateMap<UserModel, GetAllUserResponse>();
     }
 }
