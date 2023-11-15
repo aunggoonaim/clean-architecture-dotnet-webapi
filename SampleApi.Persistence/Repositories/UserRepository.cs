@@ -11,7 +11,7 @@ public class UserRepository : BaseRepository<UserModel>, IUserRepository
     {
     }
     
-    public Task<UserModel> GetByEmail(string email, CancellationToken cancellationToken)
+    public Task<UserModel?> GetByEmail(string email, CancellationToken cancellationToken)
     {
         return Context.Users.FirstOrDefaultAsync(x => x.Email == email, cancellationToken);
     }
