@@ -30,13 +30,13 @@ public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
         Context.Update(entity);
     }
 
-    public Task<T> Get(Guid id, CancellationToken cancellationToken)
+    public Task<T?> GetById(Guid id, CancellationToken cancellationToken)
     {
         return Context.Set<T>().FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
 
     public Task<List<T>> GetAll(CancellationToken cancellationToken)
     {
-        return Context.Set<T>().ToListAsync(cancellationToken);
+        return Context.Set<T>().AsNoTracking().ToListAsync(cancellationToken);
     }
 }
